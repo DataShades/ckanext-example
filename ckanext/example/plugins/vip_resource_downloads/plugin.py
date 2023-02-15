@@ -8,15 +8,17 @@ from ckanext.vip_portal.interfaces import IVipPortal, Access
 
 
 class ExampleVipResourceDownloads(p.SingletonPlugin):
-
     p.implements(IVipPortal, inherit=True)
 
-    def check_vip_access_for_endpoint(self, endpoint: Union[tuple[str, str], tuple[None, None]], user: Optional[str]):
+    def check_vip_access_for_endpoint(
+        self,
+        endpoint: Union[tuple[str, str], tuple[None, None]],
+        user: Optional[str],
+    ):
         blueprint, action = endpoint
 
         # a bit silly check. You probably want to check blueprint here as well
         if action == "download":
-
             # use `user` here for additional checks
             return Access.forbidden
 
