@@ -1,0 +1,5 @@
+example_theme_styles:
+  output: ckanext-example/theme/%(version)s-styles.css
+  filters: cssrewrite
+  contents:
+    - styles.css

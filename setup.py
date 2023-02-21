@@ -72,6 +72,7 @@ setup(
     entry_points="""
         [ckan.plugins]
         example_vip_resource_downloads=ckanext.example.plugins.vip_resource_downloads.plugin:ExampleVipResourceDownloads
+        example_theme=ckanext.example.plugins.theme.plugin:ExampleTheme
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
