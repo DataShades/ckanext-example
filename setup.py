@@ -73,6 +73,7 @@ setup(
         [ckan.plugins]
         example_vip_resource_downloads=ckanext.example.plugins.vip_resource_downloads.plugin:ExampleVipResourceDownloads
         example_theme=ckanext.example.plugins.theme.plugin:ExampleTheme
+        example_url_parser=ckanext.example.plugins.url_parser.plugin:ExampleUrlParser
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
