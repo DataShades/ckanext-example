@@ -12,13 +12,13 @@ DEFAULT_PATTERNS = ["dataset=(?P<name>\w+)"]
 # Blueprint that contains all views provided by the extension
 bp = Blueprint("example_url_parser", __name__)
 
+
 # Plugin that registers blueprint
 class ExampleUrlParser(p.SingletonPlugin):
     p.implements(p.IBlueprint)
 
     def get_blueprint(self):
         return [bp]
-
 
 
 # View that does the trick
@@ -37,13 +37,10 @@ def view():
         return tk.abort(404)
 
     # fetch all patterns from the config file(or get the default ones)
-    patterns = tk.aslist(
-        tk.config.get(CONFIG_PATTERNS, DEFAULT_PATTERNS)
-    )
+    patterns = tk.aslist(tk.config.get(CONFIG_PATTERNS, DEFAULT_PATTERNS))
 
     # try to extract ID from the url using each pattern
     for pattern in patterns:
-
         match = re.search(pattern, url)
         if not match:
             # if ID not found, go to the next pattern
