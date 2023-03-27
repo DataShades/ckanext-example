@@ -40,11 +40,6 @@ def humanize_entity_type(
     # "group_type" is an unexpected value, which will disappear once #7500 is
     # merged
     if entity_type not in ("group", "group_type") or object_type != "category":
-        from icecream import ic
-
-        if purpose == "main nav":
-            ic(entity_type, object_type)
-
         return next_(entity_type, object_type, purpose)
 
     templates = {
