@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.0](https://github.com/DataShades/ckanext-example/compare/v0.0.6...v0.1.0) (2023-04-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* hello
+
+### Features
+
+* hello ([f5dcfc1](https://github.com/DataShades/ckanext-example/commit/f5dcfc1e0a1217803b4c095e465d7c93452c8f75))
+
 ## [0.0.6](https://github.com/DataShades/ckanext-example/compare/v0.0.4...v0.0.6) (2023-04-01)
 
 
