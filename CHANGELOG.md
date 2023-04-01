@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.11](https://github.com/DataShades/ckanext-example/compare/v0.0.10...v0.0.11) (2023-04-01)
+
+
+### Features
+
+* release token ([ff26911](https://github.com/DataShades/ckanext-example/commit/ff269118d1717704326f8dd6aa8c7fc6abe8df56))
+
 ## [0.0.10](https://github.com/DataShades/ckanext-example/compare/v0.0.9...v0.0.10) (2023-04-01)
 
 
