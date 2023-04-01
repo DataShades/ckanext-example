@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.0.6](https://github.com/DataShades/ckanext-example/compare/v0.0.4...v0.0.6) (2023-04-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* check release v0.4.0 n2
+
+### Features
+
+* check release v0.4.0 ([eed4bd9](https://github.com/DataShades/ckanext-example/commit/eed4bd9a34df493c89a8282d261ecb2e671102e6))
+* check release v0.4.0 n2 ([36a1c01](https://github.com/DataShades/ckanext-example/commit/36a1c01ab66286d4e338f332c088200e4aa771aa))
+* new file ([f719b87](https://github.com/DataShades/ckanext-example/commit/f719b877055f92498009eec244a35efa2f5791d4))
+
+
+### Miscellaneous Chores
+
+* disable github formatter ([4425919](https://github.com/DataShades/ckanext-example/commit/4425919ea1351a368a700f5679d1ea71b5f1d94f))
+
 ## [0.0.4](https://github.com/DataShades/ckanext-example/compare/v0.0.2...v0.0.4) (2023-04-01)
 
 
