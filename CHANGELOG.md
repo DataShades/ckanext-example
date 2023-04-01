@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.10](https://github.com/DataShades/ckanext-example/compare/v0.0.9...v0.0.10) (2023-04-01)
+
+
+### Features
+
+* add publish action ([c4ffd2c](https://github.com/DataShades/ckanext-example/commit/c4ffd2c78e3cb39d927f12d1f2e6e5ba9b4e4e9f))
+
 ## [0.0.9](https://github.com/DataShades/ckanext-example/compare/v0.1.0...v0.0.9) (2023-04-01)
 
 
