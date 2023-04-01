@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.9](https://github.com/DataShades/ckanext-example/compare/v0.1.0...v0.0.9) (2023-04-01)
+
+
+### Features
+
+* new feature n2 ([f0a2d2f](https://github.com/DataShades/ckanext-example/commit/f0a2d2ffb085eb9b9cc05b0cd3a46b01e3ac6917))
+
+
+### Miscellaneous Chores
+
+* version ([454699e](https://github.com/DataShades/ckanext-example/commit/454699ed573bfcb63ff412684c6450889c01ea8d))
+
 ## [0.1.0](https://github.com/DataShades/ckanext-example/compare/v0.0.6...v0.1.0) (2023-04-01)
 
 
