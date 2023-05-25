@@ -71,11 +71,11 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points="""
         [ckan.plugins]
+        example_endpoint=ckanext.example.plugins.endpoint.plugin:ExampleEndpoint
         example_vip_resource_downloads=ckanext.example.plugins.vip_resource_downloads.plugin:ExampleVipResourceDownloads
         example_theme=ckanext.example.plugins.theme.plugin:ExampleTheme
         example_url_parser=ckanext.example.plugins.url_parser.plugin:ExampleUrlParser
         example_search_index=ckanext.example.plugins.search_index.plugin:ExampleSearchIndex
-        example_default_group_type=ckanext.example.plugins.default_group_type.plugin:ExampleDefaultGroupTypeIndex
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
