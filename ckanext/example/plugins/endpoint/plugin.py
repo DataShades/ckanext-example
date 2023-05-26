@@ -12,6 +12,7 @@ class ExampleEndpoint(p.SingletonPlugin):
 
     def update_config(self, config: tk.CKANConfig):
         tk.add_template_directory(config, "templates")
+        tk.add_resource("assets", "xxx")
 
 
     def get_blueprint(self):

@@ -1,0 +1,5 @@
+custom-css:
+  filters: cssrewrite
+  output: ckanext-example/%(version)s-custom-css.css
+  contents:
+    - custom-css.css

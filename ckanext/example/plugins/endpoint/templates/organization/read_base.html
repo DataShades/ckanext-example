@@ -3,5 +3,7 @@
 {% block content_primary_nav %}
   {{ super() }}
     {# name of endpoint consists of the name of Blueprint + '.' + name of the function #}
-  {{ h.build_nav_icon('example_endpoint.new_tab', _('New tab'), org_id=group_dict.id, icon='clock') }}
+    {% if h.check_access('organization_update', {'id': group_dict.id}) %}
+        {{ h.build_nav_icon('example_endpoint.new_tab', _('New tab'), org_id=group_dict.id, icon='clock') }}
+    {% endif %}
 {% endblock content_primary_nav %}
