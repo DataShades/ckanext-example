@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.5](https://github.com/DataShades/ckanext-example/compare/v0.0.12...v0.1.5) (2023-05-26)
+
+
+### Features
+
+* comment release ([35d1297](https://github.com/DataShades/ckanext-example/commit/35d12979a5386593fb22b4ded2ccb73f138166f4))
+* re-enable release action ([c77c40e](https://github.com/DataShades/ckanext-example/commit/c77c40e53c46a47109850ecf03a62b6400c87b8f))
+
+
+### version
+
+* move version to setup.py ([aeb8abd](https://github.com/DataShades/ckanext-example/commit/aeb8abd4343d04922268a7418187a02eb159b41c))
+
 ## [0.0.12](https://github.com/DataShades/ckanext-example/compare/v0.0.11...v0.0.12) (2023-04-01)
 
 
