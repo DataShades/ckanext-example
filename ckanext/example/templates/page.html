@@ -1,0 +1,13 @@
+
+{% ckan_extends %}
+
+{% block styles %}
+    {{ super() }}
+    {% asset "example/example-css" %}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {% asset "example/example-js" %}
+{% endblock %}
+

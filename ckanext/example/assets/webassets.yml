@@ -1,0 +1,51 @@
+example-js:
+  filter: rjsmin
+  output: ckanext-example/%(version)s-example.js
+  contents:
+    # - vendor/tom-select.base.min.js # slim version of tom-select
+    - vendor/tom-select.complete.min.js # tom-select with popular plugins
+
+    - vendor/Sortable.js
+    - vendor/sweetalert2.all.js
+    - vendor/hyperscript.js
+    - vendor/htmx.js
+    - vendor/iziModal.js
+    - vendor/iziToast.js
+    - vendor/slick.js
+    - vendor/daterangepicker.js
+    - vendor/moment.min.js
+    - vendor/overlayscrollbars.js
+
+    - scripts/example.js # global plugin scripts
+
+    - scripts/example-tom-select.js # tom-select adapter
+    - scripts/example-swal.js # sweetalert adapter
+    - scripts/example-sortable.js # sortablejs adapter
+    - scripts/example-izi-modal.js # iziModal adapter
+    - scripts/example-izi-toast.js # iziToast adapter
+    - scripts/example-datepicker.js # daterangepicker adapter
+    - scripts/example-scrollbar.js # overlay scrollbars adapter
+
+  extra:
+    preload:
+      - base/main
+
+example-css:
+  filter: cssrewrite
+  output: ckanext-example/%(version)s-example.css
+  contents:
+
+    ## source for these styles are included into _vendor.scss
+    # - vendor/tom-select.css
+
+    ## bootstrap styles cannot be included into SCSS, so you can use the static
+    ## version below.
+    # - vendor/tom-select.bootstrap5.css
+
+    - vendor/iziModal.css
+    - vendor/iziToast.css
+    - vendor/daterangepicker.css
+    - vendor/overlayscrollbars.css
+
+    # the main plugin theme
+    - styles/example.css

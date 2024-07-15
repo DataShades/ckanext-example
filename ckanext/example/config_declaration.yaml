@@ -1,0 +1,16 @@
+version: 1
+groups:
+    - annotation: example configuration
+      options:
+
+          - key: ckanext.example.option.name
+            default: 10
+            type: int
+            description: |
+                Integer placerat tristique nisl.
+
+          - key: ckanext.example.multivalued.option
+            type: list
+            editable: true
+            description: |
+                Another option that will be parsed as a list of words.
