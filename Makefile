@@ -56,7 +56,8 @@ ext_list = \
 	toolbelt \
 	unfold \
 	vip-portal \
-	xloader
+	xloader \
+	sitemap
 
 # information about extension source. Format is `ALTERNATIVE-NAME = URL TYPE
 # REF`, where
@@ -101,6 +102,7 @@ remote-toolbelt = https://github.com/DataShades/ckanext-toolbelt.git tag v0.4.24
 remote-unfold = https://github.com/mutantsan/ckanext-unfold.git tag v1.0.2
 remote-vip-portal = https://github.com/DataShades/ckanext-vip-portal.git tag v0.2.5a1
 remote-xloader = https://github.com/ckan/ckanext-xloader.git tag 1.0.1
+remote-sitemap = https://github.com/DataShades/ckanext-sitemap.git tag v1.0.3
 
 # extras installed with the extension. Produce `pip install
 # 'ckanext-googleanalytics[requirements]'`-like instructions.
