@@ -1,0 +1,20 @@
+{% ckan_extends %}
+
+{% block action_manage %}
+    <li>
+        <div class="dropdown btn-group">
+            <a href="#" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+                {{ _("Download resource metadata") }}
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" data-popper-placement="bottom-start">
+                <li><a class="dropdown-item text-primary" href="{{ h.url_for('/api/3/action/resource_show', id=res.id, _external=True) }}" target="_blank" rel="noopener noreferrer">JSON</a></li>
+                <li><a class="dropdown-item text-primary" href="{{ h.url_for('dcat.read_dataset', _id=pkg.name, _format='jsonld', profiles=h.get_dcat_profile(), _external=True) }}" target="_blank" rel="noopener noreferrer">JSONLD</a></li>
+                <li><a class="dropdown-item text-primary" href="{{ h.url_for('dcat.read_dataset', _id=pkg.name, _format='rdf', profiles=h.get_dcat_profile(), _external=True) }}" target="_blank" rel="noopener noreferrer">RDF/XML</a></li>
+                <li><a class="dropdown-item text-primary" href="{{ h.url_for('dcat.read_dataset', _id=pkg.name, _format='ttl', profiles=h.get_dcat_profile(), _external=True) }}" target="_blank" rel="noopener noreferrer">TTL</a></li>
+                <li><a class="dropdown-item text-primary" href="{{ h.url_for('dcat.read_dataset', _id=pkg.name, _format='n3', profiles=h.get_dcat_profile(), _external=True) }}" target="_blank" rel="noopener noreferrer">N3</a></li>
+            </ul>
+        </div>
+    </li>
+    {{ super() }}
+{% endblock action_manage %}
